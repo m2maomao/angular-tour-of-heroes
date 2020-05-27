@@ -29,10 +29,11 @@ export class HeroDetailComponent implements OnInit {
   }
 
   goBack(): void {
-    this.location.back()
+    this.location.back();
   }
 
-  save():void {
+  save(): void {
+    // 只有订阅了，值发生变化才会映射到当前
     this.heroService.updateHero(this.hero).subscribe(() => this.goBack());
   }
 
