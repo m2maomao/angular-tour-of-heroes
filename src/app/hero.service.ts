@@ -12,7 +12,7 @@ import { MessageService } from './message.service';
 })
 
 export class HeroService {
-
+  // 命名规则/:base/:collectionName; base可以随便起名字，collectionName是in-memory-data-service.ts中的英雄数据对象，必须和in-memory-data-service.ts中的导出的内存数据一致。
   private heroesUrl = 'api/heroes';
 
   httpOptions = {
